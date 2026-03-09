@@ -1,0 +1,16 @@
+[project]
+name = "mcp-servicenow"
+version = "1.0.0"
+description = "MCP Server for ServiceNow Development & Operations — enables AI agents to build integrations, manage configurations, and operate ServiceNow instances."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=1.0.0",
+    "httpx>=0.27.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/dhravesh/mcp-servicenow"
+Repository = "https://github.com/dhravesh/mcp-servicenow"

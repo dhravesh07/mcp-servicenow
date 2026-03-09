@@ -1,0 +1,22 @@
+{
+  "service_account": "ai_config_bot",
+  "pipeline": ["sandbox", "dev", "test", "prod"],
+  "instances": {
+    "sandbox": {
+      "url": "https://your-sandbox.service-now.com",
+      "password_env": "SN_SANDBOX_PASSWORD"
+    },
+    "dev": {
+      "url": "https://your-dev.service-now.com",
+      "password_env": "SN_DEV_PASSWORD"
+    },
+    "test": {
+      "url": "https://your-test.service-now.com",
+      "password_env": "SN_TEST_PASSWORD"
+    },
+    "prod": {
+      "url": "https://your-prod.service-now.com",
+      "password_env": "SN_PROD_PASSWORD"
+    }
+  }
+}

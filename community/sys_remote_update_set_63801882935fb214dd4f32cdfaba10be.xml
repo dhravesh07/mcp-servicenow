@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-02-27 12:45:24">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Generic async GlideAjax endpoint for client scripts.
+1 Script Include (RefFieldFetcher) + 9 System Properties (ref_field_fetcher.*).
+Safe to install on any ServiceNow instance.</description>
+<inserted/>
+<name>RefFieldFetcher v1.0 - Community Release</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>631608ce93dbb214dd4f32cdfaba10fb</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>murpand1</sys_created_by>
+<sys_created_on>2026-02-27 12:45:23</sys_created_on>
+<sys_id>63801882935fb214dd4f32cdfaba10be</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>murpand1</sys_updated_by>
+<sys_updated_on>2026-02-27 12:45:23</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_56f95e4f878cbe909efa7488cebb3564</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description/><ignore_cache>false</ignore_cache><is_private>false</is_private><name>ref_field_fetcher.max_fields</name><read_roles/><suffix>global</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>murpand1</sys_created_by><sys_created_on>2025-09-22 11:55:38</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>56f95e4f878cbe909efa7488cebb3564</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ref_field_fetcher.max_fields</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_56f95e4f878cbe909efa7488cebb3564</sys_update_name><sys_updated_by>murpand1</sys_updated_by><sys_updated_on>2025-09-22 11:55:38</sys_updated_on><type>string</type><value>30</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=56f95e4f878cbe909efa7488cebb3564"/></record_update>]]></payload>
+<payload_hash>-162956549</payload_hash>
+<remote_update_set display_value="RefFieldFetcher v1.0 - Community Release">63801882935fb214dd4f32cdfaba10be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>murpand1</sys_created_by>
+<sys_created_on>2026-02-27 12:45:23</sys_created_on>
+<sys_id>27801882935fb214dd4f32cdfaba10c2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19c9f21200d0000001</sys_recorded_at>
+<sys_updated_by>murpand1</sys_updated_by>
+<sys_updated_on>2026-02-27 12:45:23</sys_updated_on>
+<table/>
+<target_name>ref_field_fetcher.max_fields</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>eb501086095fb2140624c7ea97e0e8f1</update_guid>
+<update_guid_history>eb501086095fb2140624c7ea97e0e8f1:-162956549,fef95e4f248cbe904311ef3cc8b036cc:-162956549</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_fef99e4f878cbe909efa7488cebb3535</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description/><ignore_cache>false</ignore_cache><is_private>false</is_private><name>ref_field_fetcher.cache_ttl_seconds</name><read_roles/><suffix>global</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>murpand1</sys_created_by><sys_created_on>2025-09-22 11:55:40</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>fef99e4f878cbe909efa7488cebb3535</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ref_field_fetcher.cache_ttl_seconds</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_fef99e4f878cbe909efa7488cebb3535</sys_update_name><sys_updated_by>murpand1</sys_updated_by><sys_updated_on>2025-09-22 11:55:40</sys_updated_on><type>string</type><value>30</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=fef99e4f878cbe909efa7488cebb3535"/></record_update>]]></payload>
+<payload_hash>682858615</payload_hash>
+<remote_update_set display_value="RefFieldFetcher v1.0 - Community Release">63801882935fb214dd4f32cdfaba10be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>murpand1</sys_created_by>
+<sys_created_on>2026-02-27 12:45:23</sys_created_on>
+<sys_id>27809486935fb214dd4f32cdfaba10ed</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19c9f21209c0000001</sys_recorded_at>
+<sys_updated_by>murpand1</sys_updated_by>
+<sys_updated_on>2026-02-27 12:45:23</sys_updated_on>
+<table/>
+<target_name>ref_field_fetcher.cache_ttl_seconds</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>2f505086695fb214b4e1a5b7e1cf3109</update_guid>
+<update_guid_history>2f505086695fb214b4e1a5b7e1cf3109:682858615,1bf99e4f1c8cbe90c9244f6c7e0e486f:682858615</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_b9f95e4f878cbe909efa7488cebb350a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description/><ignore_cache>false</ignore_cache><is_private>false</is_private><name>ref_field_fetcher.max_records</name><read_roles/><suffix>global</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>murpand1</sys_created_by><sys_created_on>2025-09-22 11:55:36</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>b9f95e4f878cbe909efa7488cebb350a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ref_field_fetcher.max_records</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_b9f95e4f878cbe909efa7488cebb350a</sys_update_name><sys_updated_by>murpand1</sys_updated_by><sys_updated_on>2025-09-22 11:55:36</sys_updated_on><type>string</type><value>50</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=b9f95e4f878cbe909efa7488cebb350a"/></record_update>]]></payload>
+<payload_hash>296158265</payload_hash>
+<remote_update_set display_value="RefFieldFetcher v1.0 - Community Release">63801882935fb214dd4f32cdfaba10be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>murpand1</sys_created_by>
+<sys_created_on>2026-02-27 12:45:23</sys_created_on>
+<sys_id>63809486935fb214dd4f32cdfaba10ea</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19c9f2120610000001</sys_recorded_at>
+<sys_updated_by>murpand1</sys_updated_by>
+<sys_updated_on>2026-02-27 12:45:23</sys_updated_on>
+<table/>
+<target_name>ref_field_fetcher.max_records</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>e7501086f35fb2142039aed2bd67a3ff</update_guid>
+<update_guid_history>e7501086f35fb2142039aed2bd67a3ff:296158265,1ef95e4f848cbe9081799e0194a1a95e:296158265</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_7c0a128f878cbe909efa7488cebb3549</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description/><ignore_cache>false</ignore_cache><is_private>false</is_private><name>ref_field_fetcher.max_dot_depth</name><read_roles/><suffix>global</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>murpand1</sys_created_by><sys_created_on>2025-09-22 11:55:48</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>7c0a128f878cbe909efa7488cebb3549</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ref_field_fetcher.max_dot_depth</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_7c0a128f878cbe909efa7488cebb3549</sys_update_name><sys_updated_by>murpand1</sys_updated_by><sys_updated_on>2025-09-22 11:55:48</sys_updated_on><type>string</type><value>4</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=7c0a128f878cbe909efa7488cebb3549"/></record_update>]]></payload>
+<payload_hash>-177165032</payload_hash>
+<remote_update_set display_value="RefFieldFetcher v1.0 - Community Release">63801882935fb214dd4f32cdfaba10be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>murpand1</sys_created_by>
+<sys_created_on>2026-02-27 12:45:23</sys_created_on>
+<sys_id>67801882935fb214dd4f32cdfaba10c3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19c9f2120200000001</sys_recorded_at>
+<sys_updated_by>murpand1</sys_updated_by>
+<sys_updated_on>2026-02-27 12:45:23</sys_updated_on>
+<table/>
+<target_name>ref_field_fetcher.max_dot_depth</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>a3501086185fb21495f1ed35e9afebf5</update_guid>
+<update_guid_history>a3501086185fb21495f1ed35e9afebf5:-177165032,dd0a128f8d8cbe90227a38fe01747183:-177165032</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_9e391a0f878cbe909efa7488cebb352b</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.RefFieldFetcher&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;RefFieldFetcher&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var RefFieldFetcher = Class.create();
+RefFieldFetcher.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+
+    // === Add inside RefFieldFetcher prototype ===
+    getFieldsDirect: function(table, sysIdsCsv, fieldsCsv, mode, limit, acl, encQuery) {
+        // Mirror the client params into the same codepath as getFields()
+        this._directParams = {
+            sysparm_table: table,
+            sysparm_sys_ids: sysIdsCsv || '',
+            sysparm_fields: fieldsCsv || '',
+            sysparm_mode: mode || 'value',
+            sysparm_limit: (limit || '').toString(),
+            sysparm_acl: (typeof acl === 'boolean' ? acl : true) ? 'true' : 'false',
+            sysparm_query: encQuery || ''
+        };
+        // small shim to read from _directParams when present
+        var _origGetParameter = this.getParameter;
+        this.getParameter = function(name) {
+            if (this._directParams &amp;&amp; this._directParams.hasOwnProperty(name))
+                return this._directParams[name];
+            return _origGetParameter.call(this, name);
+        };
+        try {
+            return this.getFields(); // returns JSON string
+        } finally {
+            this.getParameter = _origGetParameter;
+            this._directParams = null;
+        }
+    },
+    getFields: function() {
+        // ---------- sys_properties
+        var enabled = this._propBool('ref_field_fetcher.enabled', true);
+        if (!enabled) return JSON.stringify({
+            error: 'disabled'
+        });
+
+        var allowTables = this._getAllowTables();
+        var maxRecords = this._propInt('ref_field_fetcher.max_records', 50);
+        var maxFields = this._propInt('ref_field_fetcher.max_fields', 30);
+        var cacheTTL = this._propInt('ref_field_fetcher.cache_ttl_seconds', 30);
+        var allowAclBypass = this._propBool('ref_field_fetcher.allow_acl_bypass', false);
+
+        // ---------- params
+        var table = (this.getParameter('sysparm_table') || '').trim();
+        var sysIds = (this.getParameter('sysparm_sys_ids') || this.getParameter('sysparm_sys_id') || '').trim();
+        var encQuery = (this.getParameter('sysparm_query') || '').trim(); // encoded query support
+        var fields = (this.getParameter('sysparm_fields') || '').trim();
+        var mode = (this.getParameter('sysparm_mode') || 'value').trim().toLowerCase(); // value|display|both
+        var limitStr = (this.getParameter('sysparm_limit') || '').trim();
+        var useAcl = String(this.getParameter('sysparm_acl') || 'true').toLowerCase() !== 'false'; // default true
+        var limit = limitStr ? parseInt(limitStr, 10) : 0;
+
+        // ---------- guards
+        if (!allowTables[table]) return JSON.stringify({
+            error: 'table_not_allowed',
+            table: table
+        });
+
+        if (!useAcl) {
+            if (!allowAclBypass || !(gs.hasRole('admin') || gs.hasRole('security_admin')))
+                return JSON.stringify({
+                    error: 'acl_bypass_forbidden'
+                });
+        }
+
+        if (['value', 'display', 'both'].indexOf(mode) === -1) mode = 'value';
+
+        // ---------- build target id list (from sys_ids or encoded query)
+        var ids = [];
+        if (sysIds) {
+            ids = sysIds.split(/\s*,\s*/).filter(Boolean);
+        } else if (encQuery) {
+            // validate encoded query before executing
+            var denyCfg = this._getDenyConfig();
+            var qCheck = this._isEncodedQuerySafe(table, encQuery, denyCfg);
+            if (!qCheck.ok) return JSON.stringify({
+                error: 'query_forbidden',
+                reason: qCheck.reason,
+                field: qCheck.field || ''
+            });
+
+            var grQ = useAcl ? new GlideRecordSecure(table) : new GlideRecord(table);
+            if (!grQ.isValid()) return JSON.stringify({
+                error: 'invalid_table'
+            });
+            grQ.addEncodedQuery(encQuery);
+            grQ.setLimit(limit &amp;&amp; limit &gt; 0 ? Math.min(limit, maxRecords) : maxRecords);
+            grQ.query();
+            while (grQ.next()) ids.push(String(grQ.getUniqueValue()));
+            if (!ids.length) return JSON.stringify({
+                meta: {
+                    table: table,
+                    count: 0
+                },
+                rows: []
+            });
+        } else {
+            return JSON.stringify({
+                error: 'missing_sys_id_or_query'
+            });
+        }
+        var requestedCount = ids.length;
+        // ---------- limits
+        if (limit &amp;&amp; limit &gt; 0) ids = ids.slice(0, Math.min(limit, maxRecords));
+        else ids = ids.slice(0, maxRecords);
+
+        var fieldList = [];
+		if (fields) {
+			fieldList = fields.split(',').map(function(f) {
+				return f.trim();
+			}).filter(Boolean);
+		} else {
+			fieldList = ['name'];
+		}
+
+		if (fieldList.length &gt; maxFields)
+			fieldList = fieldList.slice(0, maxFields);
+
+        // ---------- deny by field names first (fast preflight)
+        var deny = this._getDenyConfig();
+        for (var i = 0; i &lt; fieldList.length; i++) {
+			var fp = fieldList[i];
+
+			// only deny pure field names, not dot paths
+			if (fp.indexOf('.') === -1 &amp;&amp; this._isFieldForbiddenByName(fp, deny)) {
+				return JSON.stringify({
+					error: 'field_forbidden',
+					reason: 'denylist_name',
+					field: fp
+				});
+			}
+		}
+
+        // ---------- cache (user-scoped when ACL=true)
+        var cacheKey = this._makeCacheKey(table, ids, fieldList, mode, useAcl, gs.getUserID());
+        var cached = this._cacheGet(cacheKey, cacheTTL);
+        if (cached) return cached;
+
+        // ---------- fetch (use one GR per record; supports dot-walk &amp; display easily)
+        var out = {
+            meta: {
+                table: table,
+                count: 0,
+                mode: mode,
+                fields: fieldList,
+                acl: useAcl
+            },
+            rows: []
+        };
+
+        // process in chunks to keep memory and query plans sane
+        var CHUNK = 20;
+        for (var c = 0; c &lt; ids.length; c += CHUNK) {
+            var subset = ids.slice(c, c + CHUNK);
+            var gr = useAcl ? new GlideRecordSecure(table) : new GlideRecord(table);
+            if (!gr.isValid()) return JSON.stringify({
+                error: 'invalid_table'
+            });
+            gr.addQuery('sys_id', 'IN', subset.join(','));
+            gr.query();
+            while (gr.next()) {
+                var row = {
+                    sys_id: String(gr.getUniqueValue())
+                };
+
+                // deep dictionary checks for each requested field (block encrypted/password, invalid deep walks)
+                for (var f = 0; f &lt; fieldList.length; f++) {
+                    var fieldPath = fieldList[f];
+                    if (this._isFieldForbiddenByType(gr, fieldPath, deny)) {
+                        return JSON.stringify({
+                            error: 'field_forbidden',
+                            reason: 'dictionary_type',
+                            field: fieldPath
+                        });
+                    }
+
+                    // resolve value/display
+                    var val = this._resolveField(gr, fieldPath, mode);
+                    if (val !== undefined) row[fieldPath] = val;
+                }
+                out.rows.push(row);
+            }
+        }
+
+        out.meta.count = out.rows.length;
+        out.meta.requested = requestedCount;
+        out.meta.returned = out.rows.length;
+
+        var json = JSON.stringify(out);
+        this._cachePut(cacheKey, json); // cache only on success
+        return json;
+    },
+
+    // Helper: get a GR for a table, ACL-aware
+    _getGRForTable: function(table, useAcl) {
+        return useAcl ? new GlideRecordSecure(table) : new GlideRecord(table);
+    },
+
+    _getDisplayElement: function(table) {
+        var dict = new GlideRecord('sys_dictionary');
+        dict.addQuery('name', table);
+        dict.addQuery('display', true);
+        dict.setLimit(1);
+        dict.query();
+        if (dict.next()) return String(dict.getValue('element') || '');
+        return ''; // no explicit display? fall back handled below
+    },
+
+    /**
+     * Follow a dot path. For dot-walks:
+     *  - VALUE  = sys_id of the *last reference hop* (e.g., dept sys_id for department.name; company sys_id for department.company.name)
+     *  - DISPLAY= display value of the terminal field on the final record (e.g., name)
+     * For non-dot fields:
+     *  - VALUE/DISPLAY behave like standard getValue/getDisplayValue on the root record.
+     */
+    _followDotAndGet: function(rootGR, fieldPath, mode, useAcl) {
+        var segs = String(fieldPath).split('.');
+
+        // No dot-walk -&gt; simple field on rootGR
+        if (segs.length === 1) {
+            if (mode === 'value') return String(rootGR.getValue(segs[0]) || '');
+            if (mode === 'display') return String(rootGR.getDisplayValue(segs[0]) || '');
+            return {
+                value: String(rootGR.getValue(segs[0]) || ''),
+                display: String(rootGR.getDisplayValue(segs[0]) || '')
+            };
+        }
+
+        // Walk references up to the final record
+        var curGR = rootGR;
+        var curTable = rootGR.getRecordClassName();
+        var lastRefSysId = '';
+
+        for (var i = 0; i &lt; segs.length - 1; i++) {
+            var seg = segs[i];
+
+            // confirm it's a reference in the Dictionary
+            var dd = this._findDictionaryField(curTable, seg);
+			if (!dd) return undefined;
+
+            var internalType = String(dd.getValue('internal_type') || dd.getValue('type') || '').toLowerCase();
+            if (internalType !== 'reference') return undefined;
+
+            var refTable = String(dd.getValue('reference') || '');
+            if (!refTable) return undefined;
+
+            var refId = String(curGR.getValue(seg) || '');
+            if (!refId) return undefined;
+            lastRefSysId = refId;
+
+            var hop = this._getGRForTable(refTable, true); // ACL-safe hop
+            if (!hop.isValid() || !hop.get(refId)) return undefined;
+
+            curGR = hop;
+            curTable = refTable;
+        }
+
+        // Terminal field lives on curGR
+        var lastField = segs[segs.length - 1];
+        var displayElement = this._getDisplayElement(curTable);
+        var isDisplayField = (displayElement &amp;&amp; displayElement.toLowerCase() === lastField.toLowerCase());
+
+        if (mode === 'display') {
+            return String(curGR.getDisplayValue(lastField) || '');
+        }
+
+        if (mode === 'value') {
+            // If terminal is the display field, value = last reference sys_id; else value = terminal field value
+            return String(isDisplayField ? (lastRefSysId || '') : (curGR.getValue(lastField) || ''));
+        }
+
+        // both
+        return {
+            value: String(isDisplayField ? (lastRefSysId || '') : (curGR.getValue(lastField) || '')),
+            display: String(curGR.getDisplayValue(lastField) || '')
+        };
+    },
+
+    // Wrapper used by main loop
+    _resolveField: function(gr, fieldPath, mode) {
+        try {
+            if (fieldPath.indexOf('.') === -1) {
+                if (mode === 'value') return String(gr.getValue(fieldPath) || '');
+                if (mode === 'display') return String(gr.getDisplayValue(fieldPath) || '');
+                return {
+                    value: String(gr.getValue(fieldPath) || ''),
+                    display: String(gr.getDisplayValue(fieldPath) || '')
+                };
+            }
+            // Dot-walk path: use the special logic above
+            return this._followDotAndGet(gr, fieldPath, mode, true /* ACL */ );
+        } catch (e) {
+            return undefined;
+        }
+    },
+
+    // ---------- deny config &amp; checks
+    _getDenyConfig: function() {
+        var namesProp = gs.getProperty('ref_field_fetcher.deny_fields',
+            JSON.stringify({
+                password: true,
+                sys_password: true,
+                u_password: true,
+                secret: true,
+                token: true,
+                client_secret: true,
+                private_key: true,
+                otp: true,
+                credentials: true
+            })
+        );
+        var typesProp = gs.getProperty('ref_field_fetcher.deny_field_types',
+            JSON.stringify({
+                password: true,
+                glide_encrypted: true,
+                encrypted: true
+            })
+        );
+        var maxDotDepth = this._propInt('ref_field_fetcher.max_dot_depth', 4);
+        var names = {},
+            types = {};
+        try {
+            names = JSON.parse(namesProp) || {};
+        } catch (e) {}
+        try {
+            types = JSON.parse(typesProp) || {};
+        } catch (e) {}
+        return {
+            names: names,
+            types: types,
+            maxDotDepth: maxDotDepth
+        };
+    },
+
+    _isFieldForbiddenByName: function(fieldPath, deny) {
+        var segs = String(fieldPath).split('.');
+        for (var i = 0; i &lt; segs.length; i++) {
+            var seg = segs[i].toLowerCase();
+            if (deny.names[seg]) return true;
+            if (i &gt;= deny.maxDotDepth) return true; // excessive dot-walk
+        }
+        return false;
+    },
+
+    // Validate type chain via sys_dictionary starting from GR's table
+    _isFieldForbiddenByType: function(gr, fieldPath, deny) {
+        return false;
+        try {
+            var segs = fieldPath.split('.');
+            var curTable = gr.getRecordClassName();
+            for (var i = 0; i &lt; segs.length; i++) {
+                var seg = segs[i];
+
+                var dict = this._findDictionaryField(curTable, seg);
+				if (!dict) {
+					if (i &lt; segs.length - 1) return true;
+					continue;
+				}
+
+                var internalType = String(dict.getValue('internal_type') || dict.getValue('type') || '').toLowerCase();
+                if (deny.types[internalType]) return true;
+
+                if (internalType === 'reference') {
+                    var refTable = String(dict.getValue('reference') || '');
+                    if (!refTable) return true; // malformed reference
+                    curTable = refTable;
+                    continue;
+                }
+
+                // Non-reference but still trying to dot-walk → block
+                if (i &lt; segs.length - 1) return true;
+            }
+            return false;
+        } catch (e) {
+            return true; // conservative deny on errors
+        }
+    },
+
+    // ---------- encoded query validation (names/depth/type)
+    _isEncodedQuerySafe: function(table, enc, deny) {
+        var parts = String(enc).split('^');
+        for (var i = 0; i &lt; parts.length; i++) {
+            var t = parts[i].trim();
+            if (!t) continue;
+            if (/^(ORDERBY|GROUPBY|ENCODEDQUERY=)/i.test(t)) continue;
+
+            var m = t.match(/^([a-zA-Z0-9_.]+)\s*(?:&gt;=|&lt;=|!=|=|&gt;|&lt;|BETWEEN|NOT IN|IN|ON|LIKE|NOT LIKE|STARTSWITH|ENDSWITH|ISEMPTY|ISNOTEMPTY|ANYTHING)/i);
+            if (!m) continue;
+            var fPath = m[1];
+
+            if (this._isFieldForbiddenByName(fPath, deny))
+                return {
+                    ok: false,
+                    reason: 'denylist_name',
+                    field: fPath
+                };
+
+            if (this._isFieldForbiddenByTypeTable(table, fPath, deny))
+                return {
+                    ok: false,
+                    reason: 'dictionary_type',
+                    field: fPath
+                };
+        }
+        return {
+            ok: true
+        };
+    },
+
+    _isFieldForbiddenByTypeTable: function(table, fieldPath, deny) {
+        try {
+            var segs = fieldPath.split('.');
+            var curTable = table;
+            for (var i = 0; i &lt; segs.length; i++) {
+                var seg = segs[i];
+                var dict = this._findDictionaryField(curTable, seg);
+				if (!dict) {
+					if (i &lt; segs.length - 1) return true;
+					continue;
+				}
+
+				var internalType = String(dict.getValue('internal_type') || dict.getValue('type') || '').toLowerCase();
+                if (deny.types[internalType]) return true;
+                if (internalType === 'reference') {
+                    curTable = String(dict.getValue('reference') || '');
+                } else if (i &lt; segs.length - 1) {
+                    return true;
+                }
+            }
+            return false;
+        } catch (e) {
+            return true;
+        }
+    },
+
+    _findDictionaryField: function(table, element) {
+        var seen = {};
+        var currentTable = table;
+
+        while (currentTable &amp;&amp; !seen[currentTable]) {
+            seen[currentTable] = true;
+
+            var d = new GlideRecord('sys_dictionary');
+            d.addQuery('name', currentTable);
+            d.addQuery('element', element);
+            d.setLimit(1);
+            d.query();
+            if (d.next())
+                return d; // ✅ Found on this table
+
+            // ---- Look for parent table ----
+            var obj = new GlideRecord('sys_db_object');
+            obj.addQuery('name', currentTable);
+            obj.setLimit(1);
+            obj.query();
+            if (obj.next() &amp;&amp; obj.super_class) {
+                currentTable = String(obj.super_class.name); // task, task → parent table
+            } else {
+                currentTable = null; // no more parents
+            }
+        }
+        return null;
+    },
+
+    // ---------- allowlist &amp; props
+    _getAllowTables: function() {
+        var prop = gs.getProperty('ref_field_fetcher.allow_tables', '');
+        if (prop) {
+            try {
+                return JSON.parse(prop);
+            } catch (e) {}
+        }
+        // minimal default; adjust via sys_property
+        return {
+            'sys_user': true,
+            'cmn_location': true,
+            'cmdb_ci': true
+        };
+    },
+
+    _propInt: function(name, dflt) {
+        var v = parseInt(gs.getProperty(name, String(dflt)), 10);
+        return isNaN(v) ? dflt : v;
+    },
+    _propBool: function(name, dflt) {
+        var v = (gs.getProperty(name, dflt ? 'true' : 'false') + '').toLowerCase();
+        return (v === 'true' || v === '1' || v === 'yes');
+    },
+
+    // ---------- caching
+    _makeCacheKey: function(table, ids, fields, mode, useAcl, userId) {
+        var scopeUser = useAcl ? userId : 'noacl';
+        return ['RFF', table, ids.join(','), fields.join(','), mode, useAcl ? 'acl' : 'noacl', scopeUser].join('|');
+        // Note: encoded query itself is normalized to IDs before the cache key (safe &amp; smaller)
+    },
+
+    _cacheGet: function(key, ttlSeconds) {
+        if (!ttlSeconds || ttlSeconds &lt;= 0) return null;
+        try {
+            var raw = GlideCache.get(key);
+            if (!raw) return null;
+            var obj = JSON.parse(raw);
+            var nowMs = new GlideDateTime().getNumericValue();
+            if ((nowMs - (obj.ts || 0)) &gt; (ttlSeconds * 1000)) {
+                GlideCache.put(key, ''); // expire
+                return null;
+            }
+            return obj.payload || null;
+        } catch (e) {
+            return null;
+        }
+    },
+
+    _cachePut: function(key, payload) {
+        try {
+            var nowMs = new GlideDateTime().getNumericValue();
+            var wrapper = JSON.stringify({
+                ts: nowMs,
+                payload: payload
+            });
+            GlideCache.put(key, wrapper);
+        } catch (e) {}
+    },
+
+    isPublic: function() {
+        return true;
+    }
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;murpand1&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-09-22 11:54:01&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;9e391a0f878cbe909efa7488cebb352b&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;RefFieldFetcher&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_9e391a0f878cbe909efa7488cebb352b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;murpand1&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-11 13:42:09&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;9e391a0f878cbe909efa7488cebb352b&lt;/id&gt;&lt;sys_created_by&gt;murpand1&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-09-22 11:54:00&lt;/sys_created_on&gt;&lt;sys_id&gt;2e99524f878cbe909efa7488cebb35e7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;murpand1&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-09-22 11:54:00&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+<payload_hash>594956353</payload_hash>
+<remote_update_set display_value="RefFieldFetcher v1.0 - Community Release">63801882935fb214dd4f32cdfaba10be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>murpand1</sys_created_by>
+<sys_created_on>2026-02-27 12:45:23</sys_created_on>
+<sys_id>67809486935fb214dd4f32cdfaba10ee</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19c9f211fbb0000001</sys_recorded_at>
+<sys_updated_by>murpand1</sys_updated_by>
+<sys_updated_on>2026-02-27 12:45:23</sys_updated_on>
+<table/>
+<target_name>RefFieldFetcher</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>ab501086715fb21460b4378aad62e9e8</update_guid>
+<update_guid_history>ab501086715fb21460b4378aad62e9e8:594956353,06d1d453ed0db2147bc6bb81e5befa84:594956353,a48f801fdc89b2147d2b0ab5c347cbba:727751766,440f0057b889b214b058b24152834bff:-502387839,ed6e0c5f8649b214e3c70602fc560561:1103220708,4309c4937545b214b95b19e84616d50d:-1147154182,5218683733007614d44e2fe4056fe68f:1988162940,74c76837300076148ee09163b11abc3d:-1177173115,07648fcb82c0fe902cc187d90775c044:1988162940,32220f03f204fe90da0c41136d852458:-78696608,46cad2cfed8cbe904ce4657fda9d490e:695139600,f699924f678cbe90a13d413e5a37462c:-1402830681</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_dff99e4f878cbe909efa7488cebb358d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description/><ignore_cache>false</ignore_cache><is_private>false</is_private><name>ref_field_fetcher.allow_acl_bypass</name><read_roles/><suffix>global</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>murpand1</sys_created_by><sys_created_on>2025-09-22 11:55:42</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>dff99e4f878cbe909efa7488cebb358d</sys_id><sys_mod_count>1</sys_mod_count><sys_name>ref_field_fetcher.allow_acl_bypass</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_dff99e4f878cbe909efa7488cebb358d</sys_update_name><sys_updated_by>murpand1</sys_updated_by><sys_updated_on>2025-10-14 16:05:27</sys_updated_on><type>string</type><value>true</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=dff99e4f878cbe909efa7488cebb358d"/></record_update>]]></payload>
+<payload_hash>378931884</payload_hash>
+<remote_update_set display_value="RefFieldFetcher v1.0 - Community Release">63801882935fb214dd4f32cdfaba10be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>murpand1</sys_created_by>
+<sys_created_on>2026-02-27 12:45:23</sys_created_on>
+<sys_id>a3809486935fb214dd4f32cdfaba10eb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19c9f2120740000001</sys_recorded_at>
+<sys_updated_by>murpand1</sys_updated_by>
+<sys_updated_on>2026-02-27 12:45:23</sys_updated_on>
+<table/>
+<target_name>ref_field_fetcher.allow_acl_bypass</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>af505086b35fb2142b9dec05314feb02</update_guid>
+<update_guid_history>af505086b35fb2142b9dec05314feb02:378931884,7026e8d2de60fe58268eb26014ff5649:378931884,77f99e4fb28cbe90ff462468f4007cc2:579707875</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_900ade4f878cbe909efa7488cebb35f2</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description/><ignore_cache>false</ignore_cache><is_private>false</is_private><name>ref_field_fetcher.deny_field_types</name><read_roles/><suffix>global</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>murpand1</sys_created_by><sys_created_on>2025-09-22 11:55:47</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>900ade4f878cbe909efa7488cebb35f2</sys_id><sys_mod_count>1</sys_mod_count><sys_name>ref_field_fetcher.deny_field_types</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_900ade4f878cbe909efa7488cebb35f2</sys_update_name><sys_updated_by>murpand1</sys_updated_by><sys_updated_on>2025-11-11 13:02:24</sys_updated_on><type>string</type><value>{"password":true}</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=900ade4f878cbe909efa7488cebb35f2"/></record_update>]]></payload>
+<payload_hash>-1249259155</payload_hash>
+<remote_update_set display_value="RefFieldFetcher v1.0 - Community Release">63801882935fb214dd4f32cdfaba10be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>murpand1</sys_created_by>
+<sys_created_on>2026-02-27 12:45:23</sys_created_on>
+<sys_id>a7801882935fb214dd4f32cdfaba10c4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19c9f2120390000001</sys_recorded_at>
+<sys_updated_by>murpand1</sys_updated_by>
+<sys_updated_on>2026-02-27 12:45:23</sys_updated_on>
+<table/>
+<target_name>ref_field_fetcher.deny_field_types</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>6b501086515fb2147847b00d8534f5f8</update_guid>
+<update_guid_history>6b501086515fb2147847b00d8534f5f8:-1249259155,d8c848df8705b21432b7d8459eec1bab:-1249259155,b40a128fee8cbe90fe2b2e6af186042b:321735</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_ecf9da4f878cbe909efa7488cebb353d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description/><ignore_cache>false</ignore_cache><is_private>false</is_private><name>ref_field_fetcher.enabled</name><read_roles/><suffix>global</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>murpand1</sys_created_by><sys_created_on>2025-09-22 11:55:31</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>ecf9da4f878cbe909efa7488cebb353d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ref_field_fetcher.enabled</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_ecf9da4f878cbe909efa7488cebb353d</sys_update_name><sys_updated_by>murpand1</sys_updated_by><sys_updated_on>2025-09-22 11:55:31</sys_updated_on><type>string</type><value>true</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=ecf9da4f878cbe909efa7488cebb353d"/></record_update>]]></payload>
+<payload_hash>-1620370138</payload_hash>
+<remote_update_set display_value="RefFieldFetcher v1.0 - Community Release">63801882935fb214dd4f32cdfaba10be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>murpand1</sys_created_by>
+<sys_created_on>2026-02-27 12:45:23</sys_created_on>
+<sys_id>e3809486935fb214dd4f32cdfaba10ec</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19c9f2120860000001</sys_recorded_at>
+<sys_updated_by>murpand1</sys_updated_by>
+<sys_updated_on>2026-02-27 12:45:23</sys_updated_on>
+<table/>
+<target_name>ref_field_fetcher.enabled</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>67505086ea5fb214a53b0ece79e37406</update_guid>
+<update_guid_history>67505086ea5fb214a53b0ece79e37406:-1620370138,59f9da4ff88cbe9035006ddb0a84f48a:-1620370138</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_b7f9de4f878cbe909efa7488cebb352b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description/><ignore_cache>false</ignore_cache><is_private>false</is_private><name>ref_field_fetcher.deny_fields</name><read_roles/><suffix>global</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>murpand1</sys_created_by><sys_created_on>2025-09-22 11:55:44</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>b7f9de4f878cbe909efa7488cebb352b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ref_field_fetcher.deny_fields</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_b7f9de4f878cbe909efa7488cebb352b</sys_update_name><sys_updated_by>murpand1</sys_updated_by><sys_updated_on>2025-09-22 11:55:44</sys_updated_on><type>string</type><value>{"password":true,"sys_password":true,"u_password":true,"secret":true,"token":true,"client_secret":true,"private_key":true,"otp":true,"credentials":true}</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=b7f9de4f878cbe909efa7488cebb352b"/></record_update>]]></payload>
+<payload_hash>-1285415790</payload_hash>
+<remote_update_set display_value="RefFieldFetcher v1.0 - Community Release">63801882935fb214dd4f32cdfaba10be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>murpand1</sys_created_by>
+<sys_created_on>2026-02-27 12:45:23</sys_created_on>
+<sys_id>e7801882935fb214dd4f32cdfaba10c5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19c9f21204e0000001</sys_recorded_at>
+<sys_updated_by>murpand1</sys_updated_by>
+<sys_updated_on>2026-02-27 12:45:23</sys_updated_on>
+<table/>
+<target_name>ref_field_fetcher.deny_fields</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>235010868f5fb2149370c3b36a310bfc</update_guid>
+<update_guid_history>235010868f5fb2149370c3b36a310bfc:-1285415790,d00ade4fd98cbe90740854dc1f00b87c:-1285415790</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_55f9da4f878cbe909efa7488cebb3590</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description/><ignore_cache>false</ignore_cache><is_private>false</is_private><name>ref_field_fetcher.allow_tables</name><read_roles/><suffix>global</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>murpand1</sys_created_by><sys_created_on>2025-09-22 11:55:34</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>55f9da4f878cbe909efa7488cebb3590</sys_id><sys_mod_count>4</sys_mod_count><sys_name>ref_field_fetcher.allow_tables</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_55f9da4f878cbe909efa7488cebb3590</sys_update_name><sys_updated_by>murpand1</sys_updated_by><sys_updated_on>2025-11-11 13:18:13</sys_updated_on><type>string</type><value>{"sys_user":true,"cmn_location":true,"cmdb_ci_business_app":true,"cmdb_ci_computer":true,"sc_task":true,"incident":true,"sc_req_item":true,"change_request":true,"change_task":true,"task":true}</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=55f9da4f878cbe909efa7488cebb3590"/></record_update>]]></payload>
+<payload_hash>414470</payload_hash>
+<remote_update_set display_value="RefFieldFetcher v1.0 - Community Release">63801882935fb214dd4f32cdfaba10be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>murpand1</sys_created_by>
+<sys_created_on>2026-02-27 12:45:23</sys_created_on>
+<sys_id>ef801882935fb214dd4f32cdfaba10be</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19c9f211ff70000001</sys_recorded_at>
+<sys_updated_by>murpand1</sys_updated_by>
+<sys_updated_on>2026-02-27 12:45:23</sys_updated_on>
+<table/>
+<target_name>ref_field_fetcher.allow_tables</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>e3501086bc5fb214a8efbe7b2ace3cee</update_guid>
+<update_guid_history>e3501086bc5fb214a8efbe7b2ace3cee:414470,8c6c4c9bf5c5b21437c619ba68943cd1:414470,e1354cd3c181b214b477b242bfffef1b:1431342949,db06a8522460fe5896dff8e928ff8216:-302745816,727372431080fe905efe6e86763887b6:-413489777,b9f91e4f4d8cbe906c6666b2c8d9dea1:-1443979196</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

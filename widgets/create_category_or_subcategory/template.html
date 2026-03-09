@@ -1,0 +1,274 @@
+<div class="cc-widget">
+
+<div ng-if="!c.data.isAdmin">
+  <div class="alert alert-danger">
+    <strong>Access Denied.</strong> This page is only available to administrators.
+  </div>
+</div>
+
+<div ng-if="c.data.isAdmin">
+  <h2>Create Category / Subcategory / Close Codes</h2>
+  <p class="text-muted">Manage incident category, subcategory, and resolution code choices.</p>
+
+  <!-- ═══ 1. Category ═══ -->
+  <div class="panel panel-default">
+    <div class="panel-heading"><h4 class="panel-title">1. Category</h4></div>
+    <div class="panel-body">
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Mode</label>
+        <div class="col-sm-9">
+          <label class="radio-inline">
+            <input type="radio" ng-model="c.data.categoryMode" value="existing"
+                   ng-change="c.onModeChange()"> Use Existing
+          </label>
+          <label class="radio-inline">
+            <input type="radio" ng-model="c.data.categoryMode" value="new"
+                   ng-change="c.onModeChange()"> Create New
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group" ng-if="c.data.categoryMode === 'existing'">
+        <label class="col-sm-3 control-label">Select Category</label>
+        <div class="col-sm-9">
+          <select class="form-control"
+                  ng-model="c.data.selectedCategory"
+                  ng-options="cat.value as cat.label for cat in c.data.allCategories"
+                  ng-change="c.onCategoryChange()">
+            <option value="">-- Select --</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group" ng-if="c.data.categoryMode === 'new'">
+        <label class="col-sm-3 control-label">New Category Name</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control"
+                 ng-model="c.data.newCategoryLabel"
+                 placeholder="e.g. Application - Mac - OS">
+        </div>
+      </div>
+
+      <div class="form-group" ng-if="c.getPrefix()">
+        <label class="col-sm-3 control-label">Derived Prefix</label>
+        <div class="col-sm-9">
+          <p class="form-control-static">
+            <strong class="text-info">{{c.getPrefix()}}</strong>
+            <span class="cc-muted-small"> &mdash; auto-prefixed to subcategory &amp; close code values</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ Current Hierarchy ═══ -->
+  <div class="panel panel-info" ng-if="c.data.hierarchy && c.data.hierarchy.subcategories.length">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <i class="fa fa-sitemap"></i>
+        Current Hierarchy: {{c.data.hierarchy.categoryLabel}}
+      </h4>
+    </div>
+    <div class="panel-body">
+      <div class="cc-tree-sub" ng-repeat="sub in c.data.hierarchy.subcategories">
+        <div class="cc-tree-sub-header">
+          <i class="fa fa-folder-open-o text-info"></i>
+          {{sub.label}}
+          <code class="cc-muted-small">{{sub.value}}</code>
+        </div>
+        <div class="cc-tree-codes">
+          <span ng-if="!sub.closeCodes.length" class="cc-muted-small">No close codes</span>
+          <table class="table table-condensed table-bordered" ng-if="sub.closeCodes.length">
+            <tbody>
+              <tr ng-repeat="cc in sub.closeCodes">
+                <td style="width:50%">{{cc.label}}</td>
+                <td><code>{{cc.value}}</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ 2. Subcategories ═══ -->
+  <div class="panel panel-default">
+    <div class="panel-heading"><h4 class="panel-title">2. Subcategories</h4></div>
+    <div class="panel-body">
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Subcategory Labels</label>
+        <div class="col-sm-9">
+          <textarea class="form-control" rows="5"
+                    ng-model="c.data.subcategories"
+                    ng-disabled="c.data.submitting"
+                    placeholder="One per line, or comma-separated:&#10;Performance&#10;Connectivity&#10;Data Error"></textarea>
+          <p class="help-block">Values are auto-generated with the category prefix.</p>
+        </div>
+      </div>
+      <div ng-if="c.data.subcategories && c.getPrefix()">
+        <label class="col-sm-3 control-label">Preview</label>
+        <div class="col-sm-9">
+          <table class="table table-condensed table-bordered">
+            <thead><tr><th>Label</th><th>Value</th></tr></thead>
+            <tbody>
+              <tr ng-repeat="item in c.parsePreview(c.data.subcategories)">
+                <td>{{item.label}}</td>
+                <td><code>{{item.value}}</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ 3. Close Codes ═══ -->
+  <div class="panel panel-default">
+    <div class="panel-heading"><h4 class="panel-title">3. Resolution / Close Codes</h4></div>
+    <div class="panel-body">
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Close Code Labels</label>
+        <div class="col-sm-9">
+          <textarea class="form-control" rows="5"
+                    ng-model="c.data.closeCodes"
+                    ng-disabled="c.data.submitting"
+                    placeholder="One per line, or comma-separated:&#10;Resolved&#10;Workaround&#10;Not Reproducible"></textarea>
+          <p class="help-block">
+            Created for <strong>every</strong> subcategory under this category.
+          </p>
+        </div>
+      </div>
+      <div ng-if="c.data.closeCodes && c.getPrefix()">
+        <label class="col-sm-3 control-label">Preview</label>
+        <div class="col-sm-9">
+          <table class="table table-condensed table-bordered">
+            <thead><tr><th>Label</th><th>Value</th></tr></thead>
+            <tbody>
+              <tr ng-repeat="item in c.parsePreview(c.data.closeCodes)">
+                <td>{{item.label}}</td>
+                <td><code>{{item.value}}</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ Submit Button ═══ -->
+  <div class="text-center" style="margin: 24px 0;" ng-if="!c.data.progress">
+    <button type="button" class="btn btn-primary btn-lg"
+            ng-disabled="c.data.submitting"
+            ng-click="c.submit()">
+      Create Choices
+    </button>
+  </div>
+
+  <!-- ═══ Progress Stepper ═══ -->
+  <div class="panel panel-default" ng-if="c.data.progress">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <i class="fa fa-cog" ng-class="{'fa-spin': c.data.submitting}"></i>
+        {{c.data.progress.done ? 'Complete' : 'Processing...'}}
+      </h4>
+    </div>
+    <div class="panel-body">
+      <div class="cc-stepper">
+        <div class="cc-step"
+             ng-repeat="step in c.data.progress.steps"
+             ng-class="{'is-active': step.status === 'active', 'is-done': step.status === 'done', 'is-error': step.status === 'error'}">
+          <div class="cc-step-icon">
+            <i class="fa"
+               ng-class="{
+                 'fa-circle-o': step.status === 'pending',
+                 'fa-spinner fa-spin': step.status === 'active',
+                 'fa-check': step.status === 'done',
+                 'fa-times': step.status === 'error'
+               }"></i>
+          </div>
+          <div class="cc-step-body">
+            <div class="cc-step-label">{{step.label}}</div>
+            <div class="cc-step-summary" ng-if="step.summary">{{step.summary}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ Results Summary ═══ -->
+  <div ng-if="c.data.summary">
+
+    <!-- Count cards -->
+    <div class="cc-summary-bar">
+      <div class="cc-count-card is-created">
+        <div class="cc-count-num">{{c.data.summary.created.length}}</div>
+        <div class="cc-count-label">Created</div>
+      </div>
+      <div class="cc-count-card is-skipped">
+        <div class="cc-count-num">{{c.data.summary.skipped.length}}</div>
+        <div class="cc-count-label">Skipped</div>
+      </div>
+      <div class="cc-count-card is-errors" ng-if="c.data.summary.errors.length">
+        <div class="cc-count-num">{{c.data.summary.errors.length}}</div>
+        <div class="cc-count-label">Errors</div>
+      </div>
+    </div>
+
+    <!-- Created details -->
+    <div class="cc-detail-group" ng-if="c.data.summary.created.length">
+      <div class="cc-detail-header" ng-click="c.toggleDetail('created')">
+        <span><i class="fa fa-check-circle text-success"></i> Created ({{c.data.summary.created.length}})</span>
+        <i class="fa" ng-class="c.detailOpen.created ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+      </div>
+      <div class="cc-detail-items" ng-if="c.detailOpen.created">
+        <div class="cc-detail-item" ng-repeat="item in c.data.summary.created">
+          <i class="fa fa-check"></i>
+          <span>
+            <strong>{{item.text}}</strong>
+            <span class="cc-muted-small" ng-if="item.detail">{{item.detail}}</span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skipped details -->
+    <div class="cc-detail-group" ng-if="c.data.summary.skipped.length">
+      <div class="cc-detail-header" ng-click="c.toggleDetail('skipped')">
+        <span><i class="fa fa-forward text-warning"></i> Skipped ({{c.data.summary.skipped.length}})</span>
+        <i class="fa" ng-class="c.detailOpen.skipped ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+      </div>
+      <div class="cc-detail-items" ng-if="c.detailOpen.skipped">
+        <div class="cc-detail-item" ng-repeat="item in c.data.summary.skipped">
+          <i class="fa fa-forward"></i>
+          <span>
+            <strong>{{item.text}}</strong>
+            <span class="cc-muted-small" ng-if="item.detail">{{item.detail}}</span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Error details -->
+    <div class="cc-detail-group" ng-if="c.data.summary.errors.length">
+      <div class="cc-detail-header" ng-click="c.toggleDetail('errors')">
+        <span><i class="fa fa-exclamation-circle text-danger"></i> Errors ({{c.data.summary.errors.length}})</span>
+        <i class="fa" ng-class="c.detailOpen.errors ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+      </div>
+      <div class="cc-detail-items" ng-if="c.detailOpen.errors">
+        <div class="cc-detail-item" ng-repeat="item in c.data.summary.errors">
+          <i class="fa fa-times"></i>
+          <span><strong>{{item.text}}</strong></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start over -->
+    <div class="text-center" style="margin-top: 20px;">
+      <button type="button" class="btn btn-default" ng-click="c.resetResults()">
+        <i class="fa fa-plus"></i> Create More
+      </button>
+    </div>
+  </div>
+
+</div>
+</div>

@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "servicenow-dev": {
+      "type": "stdio",
+      "command": ".venv/bin/python",
+      "args": ["server.py"],
+      "env": {
+        "SN_INSTANCE": "https://your-instance.service-now.com",
+        "SN_USER": "your-service-account",
+        "SN_PASSWORD": "your-password",
+        "GIT_REPO_PATH": "/path/to/your/git/repo",
+        "SN_SANDBOX_PASSWORD": "your-sandbox-password",
+        "SN_DEV_PASSWORD": "your-dev-password",
+        "SN_TEST_PASSWORD": "your-test-password",
+        "SN_PROD_PASSWORD": "your-prod-password"
+      }
+    }
+  }
+}

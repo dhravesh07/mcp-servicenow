@@ -1,0 +1,8 @@
+.env
+.mcp.json
+sn_instances.json
+__pycache__/
+*.pyc
+.venv/
+update_sets/
+.DS_Store
