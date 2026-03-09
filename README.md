@@ -17,7 +17,7 @@ Built with [FastMCP](https://github.com/jlowin/fastmcp) and designed as a [Claud
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/dhravesh/mcp-servicenow.git
+git clone https://github.com/dhravesh07/mcp-servicenow.git
 cd mcp-servicenow
 python3 -m venv .venv
 source .venv/bin/activate
